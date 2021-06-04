@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="vuejsproject.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+    img {
+        width: 500px;
+        height:500px;
+        object-fit: contain;
+      } 
+      </style>
+</head>
+
+    <div id="app">
+        <input type="button" value="CLICK TO GENERATE CAT IMAGE AND CAT FACT" @click="APIcall"><br>
+        <img :src="img" class="img"><br>
+        <p>{{fact}}</p>
+    </div>
+</body>
